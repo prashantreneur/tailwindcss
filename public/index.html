@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+    <header class="border-b md:flex md:items-center md:justify-between  p-4 pb-0 shadow-lg md:pb-4">
+
+        <!-- Logo text or image -->
+        <div class="flex items-center justify-between mb-4 md:mb-0">
+            <h1 class="leading-none text-2xl text-grey-darkest">
+                <a class="no-underline text-grey-darkest hover:text-black" href="#">
+                    Tailwind CSS
+                </a>
+            </h1>
+
+            <a class="text-black hover:text-orange md:hidden" href="#">
+                <i class="fa fa-2x fa-bars"></i>
+            </a>
+        </div>
+        <!-- END Logo text or image -->
+
+        <!-- Search field -->
+        <form class="mb-4 w-full md:mb-0 md:w-1/4">
+            <label class="hidden" for="search-form">Search</label>
+            <input class="bg-grey-lightest border-2 focus:border-orange p-2 rounded-lg shadow-inner w-full"
+                placeholder="Search" type="text">
+            <button class="hidden">Submit</button>
+        </form>
+        <!-- END Search field -->
+
+        <!-- Global navigation -->
+        <nav>
+            <ul class="list-reset md:flex md:items-center">
+                <li class="md:ml-4">
+                    <a class="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+                        href="#">
+                        Products
+                    </a>
+                </li>
+                <li class="md:ml-4">
+                    <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+                        href="#">
+                        About
+                    </a>
+                </li>
+                <li class="md:ml-4">
+                    <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+                        href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Global navigation -->
+    </header>
+
+    <!-- Card Components -->
+    <section>
+        <div class="min-h-screen min-w-full bg-gray-100 flex flex-col justify-center p-10">
+            <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
+                <!-- Backgroung 3d efftect -->
+                <div
+                    class="absolute inset-0 -mr-3.5 bg-gradient-to-r from-red-100 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl">
+                </div>
+
+
+                <div class="relative bg-white shadow-lg sm:rounded-3xl">
+
+                    <div class="flex items-center justify-start pt-6 pl-6">
+                        <span class="w-3 h-3 bg-red-400 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-green-400 rounded-full mr-2"></span>
+                    </div>
+
+                    <div class="px-20 py-6">
+                        <!-- hero section -->
+                        <div class="lg:2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-left">
+                            <div class="text-6xl font-semibold text-gray-900 leading-none ">Bring all your work
+                                together
+                            </div>
+                            <div class="mt-6 text-xl font-light text-true-gray-500 antialiased">A better experience for
+                                yout attendees and less stress yout team.</div>
+                            <button
+                                class="mt-6 px-8 py-4 rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                Download for Free
+                            </button>
+                        </div>
+                        <div class="mt-12 lg:mt-32 lg:ml-20 text-left">
+                            <bottom type="button"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-gray-800 animate-bounce hover:text-gray-900 hover:bg-cool-gray-50 transition duration-300 ease-in-out cursor-pointer">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </bottom>
+                        </div>
+
+                        <!-- /hero section -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
